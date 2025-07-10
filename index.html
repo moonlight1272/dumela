@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dumela Daka | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Dumela</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" style="margin-left: 1rem;">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="slide-up">
+    <div class="content">
+      <h1 class="heading xl"><span id="hero-titles"></span></h1>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <div class="bio">
+        <img src="https://placehold.co/200x200" alt="Dumela Daka" />
+        <p>Hello! I'm Dumela, a final-year Computer Science student passionate about building beautiful and functional web experiences.</p>
+        <a href="Dumela_Daka_Resume.pdf" download class="btn">Download CV</a>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a href="project1.html" class="project-card">
+          <img src="https://placehold.co/400x300" alt="Project 1" />
+          <div class="overlay">Church Flyers(Project 1)</div>
+        </a>
+        <a href="project2.html" class="project-card">
+          <img src="https://placehold.co/400x300" alt="Project 2" />
+          <div class="overlay">Company Flyers(Project 2)</div>
+        </a>
+        <a href="project3.html" class="project-card">
+          <img src="https://placehold.co/400x300" alt="Project 3" />
+          <div class="overlay">University Flyers(Project 3)</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Photoshop</div>
+        <div class="skill">React</div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="fade-in">
+      <h2>Testimonials</h2>
+      <div class="grid">
+        <blockquote class="testimonial">
+          “Working with Dumela was an absolute pleasure.”
+          <footer>— Jane Zulu</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          “Professional, creative, and timely.”
+          <footer>— Pastor B.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="stats" class="fade-in">
+  <h2>My Impact</h2>
+  <div class="grid stats-grid">
+    <div class="stat">
+      <span class="counter" data-target="3">0</span>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="15">0</span>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="8">0</span>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/dumeladaka22@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
